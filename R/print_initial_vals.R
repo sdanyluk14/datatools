@@ -1,7 +1,8 @@
 #' A Cat Function
 #'
 #' This function allows you to express your love of cats.
-#' @param love Do you love cats? Defaults to TRUE.
+#' @param df A DataFrame
+#' @param x Number of non-na items to print for each column.
 #' @keywords cats
 #' @export
 #' @examples
