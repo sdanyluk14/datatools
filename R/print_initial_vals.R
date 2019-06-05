@@ -9,7 +9,7 @@
 #' print_initial_vals(iris)
 
 # Print the first x non-na values for each column in dataframe "df"
-print_initial_vals <- function(df, x = 5) {
+print_initial_vals <- function(df, x = 6) {
   for (i in 1:ncol(df)) {
     cat("First ", x, " non-NA values of ", names(df)[i], ":", df[which(!is.na(df[,i]))[1:x],i], "\n")
   }
