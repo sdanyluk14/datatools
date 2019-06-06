@@ -2,17 +2,19 @@
 % Please edit documentation in R/print_initial_vals.R
 \name{print_initial_vals}
 \alias{print_initial_vals}
-\title{A Cat Function}
+\title{Print Intitial Vals Function}
 \usage{
-print_initial_vals(df, x)
+print_initial_vals(df, x = 6)
 }
 \arguments{
-\item{love}{Do you love cats? Defaults to TRUE.}
+\item{df}{A DataFrame}
+
+\item{x}{Number of non-na items to print for each column.}
 }
 \description{
-This function allows you to express your love of cats.
+Given a dataframe and a number x, prints the first x non-na values of each column (though prints first 5 values if no number "x" is specified).
 }
 \examples{
-cat_function()
+print_initial_vals(iris)
 }
-\keyword{cats}
+\keyword{dataframe}
